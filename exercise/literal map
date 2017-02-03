@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// creating a map of authors and one of their books
+	m := map[string]string{
+		"Stephen King: ":          "The Shining",
+		"Bret Easton Ellis: ":     "Lunar Park",
+		"Adam Nevill: ":           "The Ritual",
+		"John Ajvide Lindqvist: ": "Let the Right One In",
+		"J.K. Rowling: ":          "Harry Potter and the Deathly Hallow",
+		"James Herbert: ":         "The Rats",
+		"Micheal Scott: ":         "The Alchemyst",
+		"C.S. Lewis: ":            "The Lion, the Witch and the Wardrobe",
+		"Dan Brown: ":             "The Da Vinci Code",
+	}
+	// Prints out a single entry from the map with a key of J.K. Rowling
+	fmt.Println(m["J.K. Rowling"])
+	// prints out the entire map
+	fmt.Println(m)
+
+	// Looping through the map and printing out the key and value
+	for k, v := range m {
+		fmt.Println(k, v)
+
+	}
+}
