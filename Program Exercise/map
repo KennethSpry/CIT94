@@ -1,1 +1,19 @@
 
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	m := map[string]int{"Cars": 1, "Subaru": 2, "Dodge": 3, "Ford": 4, "Chevy": 5, "Jeep"}
+	fmt.Println(m)
+
+	for k, _ := range m {
+		fmt.Println(k)
+	}
+
+	for k, v := range m {
+		fmt.Println(k, v)
+	}
+}
