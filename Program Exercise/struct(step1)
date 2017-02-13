@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+type person struct{
+fName string
+lName string
+}
+
+func main() {
+
+p1 := person{"Ken", "Spry"}	
+	p2 := person{"Michael", "Roberts"}
+	fmt.Println(p1)
+	fmt.Println(p2)
+}
