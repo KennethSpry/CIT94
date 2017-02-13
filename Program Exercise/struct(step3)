@@ -7,15 +7,15 @@ import (
 type person struct {
 fname string
 age int
-prefs []string
+favfood []string
 }
 
 func main() {
 p1 := person{
 "Spry",
 55,
-[]string{"one", "another", "last", "lied"},
+[]string{"hambugers", "pizza", "spaghetti", "burritos"},
 }
 
-	fmt.Println(p1.prefs)
+	fmt.Println(p1.favfood)
 }
