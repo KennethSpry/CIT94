@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+type person struct {
+fName string
+age int
+}
+
+func main() {
+	p1 := person{
+	"Spry",
+	55,
+	}
+	fmt.Println(p1.fname)
+	}
