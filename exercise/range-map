@@ -1,1 +1,21 @@
+package main
 
+import "fmt"
+
+func main() {
+ 
+  m := map[string]string{
+    "Stephen King: " : "The Shining" ,
+    "J.R.R. Tolkien: " : "The Lord of the Rings" ,
+    "Benjamin Percy: " : "Red Moon" ,
+    "J.K. Rowling: " : "Harry Potter and the Sorcerer's Stone" ,
+    "Tana French: " : "The Secret Place" ,
+    "Carsten Stroud: " : "Niceville" ,
+  }
+
+ 
+  for k, v := range m {
+    fmt.Println(k,v)
+
+  }
+}
