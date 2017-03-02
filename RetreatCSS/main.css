@@ -1,0 +1,15 @@
+html{
+  margins: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("imerge.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
