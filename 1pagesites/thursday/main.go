@@ -8,7 +8,7 @@ import(
 func main() {
   http.HandleFunc("/",index)
   http.HandleFunc("/main.css,css)
-  http.HandleFunc("small-island.jpeg",imerge)
+  http.HandleFunc("small-island.jpeg",island)
   http.ListenAndServe(":8080", nil)
 }
 func index(w http.ResponseWriter, req *http.request) {
