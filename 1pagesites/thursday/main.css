@@ -2,4 +2,6 @@ html{
   margins: 0;
   padding: 0;
   border: 0;
-  box-sizing: 
+  box-sizing: border-box;
+}
+
