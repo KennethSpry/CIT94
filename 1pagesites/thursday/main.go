@@ -13,7 +13,7 @@ func main() {
 }
 func index(w http.ResponseWriter, req *http.request) {
 w.Header().Set("Content-Type": "text/html; charset=utf-8")
-io.WriteString(w, req "template") 
+io.WriteString(w, req "template.css") 
 }  
 
 func css(w http.ResponseWriter, req *http.request) {
@@ -21,7 +21,7 @@ http.ServerFile(w, req, "main.css")
 }
                   
 func template(w http.ResponseWriter, req *http.request) {
-http.ServerFile(w, req, "template")
+http.ServerFile(w, req, "template.css")
 }
                   
 func imerge(w http.ResponseWriter, req *http.request) {
