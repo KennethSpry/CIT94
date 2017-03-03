@@ -16,10 +16,10 @@ w.Header().Set("Content-Type": "text/html; charset=utf-8")
 io.WriteString(w, "template") 
 }  
 
-func css(
+func css(w http.ResponseWriter, req *http.request) {
   
   
-  func template(
+func template(w http.ResponseWriter, req *http.request) {
     
     
-    func imerge(
+func imerge(w http.ResponseWriter, req *http.request) {
