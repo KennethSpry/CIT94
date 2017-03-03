@@ -10,7 +10,7 @@ body{
   display: flex;
   align-items : center;
   justify-content: center;
-  background: url("small-island.jpg");
+  background: url("small-island.jpeg");
   background-size: cover;
   background-repeat: no-repeat:
 }
