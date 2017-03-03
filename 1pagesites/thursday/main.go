@@ -11,6 +11,6 @@ func main() {
   http.HandleFunc("imerge.jpeg",imerge)
   http.ListenAndServe(":8080", nil)
 }
-func index(w http.ResponseWriter, req *http request) {
+func index(w http.ResponseWriter, req *http.request) {
                     
   
