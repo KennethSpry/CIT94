@@ -11,5 +11,6 @@ body{
   align-items : center;
   justify-content: center;
   background: url
-  background-size:
-  background-repeat:
+  background-size: cover;
+  background-repeat: no repeat:
+}
