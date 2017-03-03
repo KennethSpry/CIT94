@@ -8,7 +8,7 @@ import(
 func main() {
   http.HandleFunc("/",index)
   http.HandleFunc("/main.css,css)
-  http.HandleFunc("small-island.jpg",imerge)
+  http.HandleFunc("small-island.jpeg",imerge)
   http.ListenAndServe(":8080", nil)
 }
 func index(w http.ResponseWriter, req *http.request) {
@@ -25,5 +25,5 @@ http.ServerFile(w, req, "template")
 }
                   
 func imerge(w http.ResponseWriter, req *http.request) {
-http.ServerFile(w, req, `<img scr="small-island.jpg">`)
+http.ServerFile(w, req, `<img scr="small-island.jpeg">`)
 }
