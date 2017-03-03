@@ -17,11 +17,11 @@ io.WriteString(w, req "template")
 }  
 
 func css(w http.ResponseWriter, req *http.request) {
-http.ServerFile(w, req "main.css") 
+http.ServerFile(w, req, "main.css") 
 }
 func template(w http.ResponseWriter, req *http.request) {
-http.ServerFile(w, req "imerge.jpeg")
+http.ServerFile(w, req, "template")
 }    
 func imerge(w http.ResponseWriter, req *http.request) {
-http.ServerFile(w, req "template")
+http.ServerFile(w, req, "imerge.jpeg")
 }
