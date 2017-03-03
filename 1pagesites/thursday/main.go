@@ -6,4 +6,8 @@ import(
 )
 
 func main() {
+  http.HandleFunc("/", index)
+  http.HandleFunc
+  http.HandleFunc
+  http.ListenAndServe
   
