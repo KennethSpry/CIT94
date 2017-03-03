@@ -13,5 +13,5 @@ func main() {
 }
 func index(w http.ResponseWriter, req *http.request) {
 w.Header().Set("Content-Type": "text/html; charset=utf-8")
-io.WriteString(  
+io.WriteString(w, `<!DOCTYPE>  
   
