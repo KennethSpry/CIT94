@@ -7,7 +7,7 @@ import(
 
 func main() {
   http.HandleFunc("/",index)
-  http.HandleFunc("main.css,css)
+  http.HandleFunc("/main.css,css)
   http.HandleFunc("imerge.jpeg",imerge)
   http.ListenAndServe(":8080", nil)
 }
