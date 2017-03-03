@@ -12,5 +12,5 @@ func main() {
   http.ListenAndServe(":8080", nil)
 }
 func index(w http.ResponseWriter, req *http.request) {
-  w.Header Set()                   
+  w.Header().Set                   
   
