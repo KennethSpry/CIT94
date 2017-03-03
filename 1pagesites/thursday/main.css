@@ -8,5 +8,6 @@ html{
 body{
   color: purple;
   display: flex;
-  align- : center;
+  align-items : center;
+  justify-content: center;
   
