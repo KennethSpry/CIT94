@@ -1,1 +1,16 @@
+html{
+  margins: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
+body{
+  color: purple;
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  background: url("halconperegrino2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat:
+}
