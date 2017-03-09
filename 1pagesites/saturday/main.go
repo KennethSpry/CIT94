@@ -23,6 +23,6 @@ func css(w http.ResponseWriter, req *http.request) {
 http.ServerFile(w, req, "main.css") 
 }
                  
-func imerge(w http.ResponseWriter, req *http.request) {
+func hawk(w http.ResponseWriter, req *http.request) {
 http.ServerFile(w, req, "halconperegrino2.jpeg",hawk)
 }
