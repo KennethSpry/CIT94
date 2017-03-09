@@ -1,0 +1,17 @@
+package main
+
+import (
+"fmt"
+"net/http"
+) 
+
+func main() {
+http.HandleFunc("/", index)
+http.Handle("/favicon", http.NotFoundHandler())
+http.ListenAndServe(":8080", nil)
+}
+
+func index(w http.RequestWriter, req *http.Request){
+v :=req.FormValue("q")
+fmt.Fprintln(w, "Do My Search: "+v)
+}
