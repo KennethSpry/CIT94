@@ -21,7 +21,7 @@ func main() {
 }
                   
 func foo(w http.ResponseWriter, r *http.Request) {
-  io.WriteString(w, `<h1>foo ran</h1>
+  io.WriteString(w, `<h1>foo ran</h1`>
 }
 
 func dog(w http.ResposeWriter, r *http.Request) {
@@ -29,9 +29,9 @@ func dog(w http.ResposeWriter, r *http.Request) {
 }
 
 func css(w http.ResponseWriter, r *http.Request) {
-  http.ServeFile(w, r, "main.css")
+  http.ServeFile(w,r, "main.css")
 }
 
 func pic(w http.ResponseWriter, r *http.Request) {
-  http.ServeFile(w, r, "dog_with_the_tv_looking_hd_picture_168923.jpeg")
+  http.ServeFile(w,r, "dog_with_the_tv_looking_hd_picture_168923.jpeg")
 }
