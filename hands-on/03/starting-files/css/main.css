@@ -1,3 +1,44 @@
 html {
     font-family: 'Open Sans', san-serif;
-    background-color
+    background-color:    ;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color:   ;
+    padding: 0 20px 20px 20px;
+    border: 5px solid Black;
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 100%;
+    border: 20px ridge red;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+#element1 {
+    color:    ;
+}
+
+#element2 {
+    color:   ;
+}
+#element3 {
+    color:   ;
+}
+
+#element4 {
+    color:   ;
+}    
