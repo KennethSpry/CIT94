@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bowzer</title>
+  </head>
+  <body>
+    <p>Bowzer</p>
+    <h1>Here is the Cookie</h1>
+
+    <h1>{{if .}}
+      <h2>Name: {{.Name}}</h2>
+      <h2>Value: {{.Value}}</h2>
+      <h2>Path: {{.Path}}
+        {{else}}
+      <h1>There is no Cookie.</h1>
+      {{end}}
+</html>
