@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <Form action="/" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required="required">
+        <br>
+        <label for="first">First Name</label>
+        <input type="text" name="first" id="first" required="required">
+        <br>
+        <label for="last">Last Name</label>
+        <input type="text"  name="last" id="last" required="required">
+        <br>
+        <input type="submit">
+    </Form>
+
+    {{if .First}}
+    <h1>Username: {{.Username}}</h1>
+    <h1> First Name: {{.First}}</h1>
+    <h1> Last Name:  {{.Last}}</h1>
+    {{end}}
+</body>
+</html>
