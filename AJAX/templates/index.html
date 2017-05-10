@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX</title>
+  </head>
+  <body>
+    <a href="#"><h1>Make Something Happen</h1></a>
+
+    <script>
+      document.querySelector('h1').onclick = makeRequest;
+      function makeRequest() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/foo')
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            alert(xhr.responseText);
+          }
+        };
+        xhr.send()
+      }
+    </script>
+  </body>
+</html>
