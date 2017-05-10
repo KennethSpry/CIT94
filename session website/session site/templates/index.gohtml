@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html, body{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      height: 100%;
+    }
+
+    body {
+      background: -webkit-linear-gradient(top, rgba(0, 100, 150, 1), rgba(127, 255, 212, .4));
+      background: -moz-linear-gradient(top, rgba(0, 100, 150, 1), rgba(127, 255, 212, .4));
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+{{if .First}}
+<h3>Credentials</h3>
+USER NAME {{.UserName}}<br>
+PASSWORD {{.Password}}<br>
+FIRST {{.First}}<br>
+LAST {{.Last}}<br>
+<h2><a href="/logout">log out</a></h2>
+{{else}}
+<h2><a href="/signup">sign up</a></h2>
+<h2><a href="/login">log in</a></h2>
+{{end}}
+
+<br>
+<h2>Go to <a href="/bar">the bar</a></h2>
+
+</body>
+</html>
