@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BAR</title>
+  <style>
+    html{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      height: 100%;
+    }
+    body{
+      background: -webkit-linear-gradient(top, rgba(0,100,150,1), rgba(127,255,212,.4));
+      background: -moz-linear-gradient(top, rgba(0,100,150,1), rgba(127,255,212,.4));
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Welcome to the bar. What can I get you to drink?</h1>
+
+{{if .First}}
+USER NAME {{.UserName}}<br>
+PASSWORD {{.Password}}<br>
+FIRST {{.First}}<br>
+LAST {{.Last}}<br>
+<h2><a href="/logout">log out</a></h2>
+{{end}}
+
+</body>
+</html>
