@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html, body{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      height: 100%;
+    }
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: -webkit-linear-gradient(top, rgba(0,100,150,1), rgba(127,255,212,.4));
+      background: -moz-linear-gradient(top, rgba(0,100,150,1), rgba(127,255,212,.4));
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    form input{
+      border-radius: 1em;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+
+
+<form method="post">
+  <h1>Sign Up</h1>
+
+  <input type="email" name="username" placeholder="email"><br>
+  <input type="text" name="password" placeholder="password"><br>
+  <input type="text" name="firstname" placeholder="first name"><br>
+  <input type="text" name="lastname" placeholder="last name"><br>
+  <label for="sr">Role</label>
+  <select name="role" id="sr">
+    <option value="user">user</option>
+    <option value="admin">admin</option>
+    <option value="007">007</option>
+  </select>
+  <br>
+  <br>
+  <input type="submit">
+
+</form>
+
+</body>
+</html>
